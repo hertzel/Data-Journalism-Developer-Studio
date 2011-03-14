@@ -14,7 +14,7 @@ echo 'export MANPATH=${MANPATH}:/home/kipling/perl5/man' >>~/.bashrc
 cd ..
 
 . ~/.bashrc # switch to local Perl
-cpan # first, autoconfigure
+cpan < yesyes # first, autoconfigure
 cpan CPAN # next, update CPAN itself
 cpan < prep.cpan # set config options
 
