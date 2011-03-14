@@ -1,0 +1,13 @@
+
+[Desktop Entry]
+Version=1.0
+Name=Google Refine
+Comment=Messy Data Cleanup Tool
+GenericName=A Tool for Cleaning up Messy Data Sets
+Exec=/home/studio/Desktop/google-refine-2.0/refine
+Terminal=true
+X-MultipleArgs=false
+Type=Application
+Icon=/home/studio/Desktop/google-refine-2.0/webapp/modules/core/images/logo-gem-150.png
+X-Desktop-File-Install-Version=0.16
+Name[en_US]=Google Refine

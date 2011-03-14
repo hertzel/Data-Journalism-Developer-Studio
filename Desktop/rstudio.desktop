@@ -1,0 +1,10 @@
+
+[Desktop Entry]
+Exec=/usr/local/lib/rstudio/bin/rstudio %F
+Icon=/home/studio/Desktop/Install-Scripts/rstudio_logo_32.png
+Type=Application
+Terminal=false
+Name=RStudio
+Categories=Development
+GenericName[en_US.utf8]=An Integrated Development Environment for R
+Comment[en_US.utf8]=R Language IDE

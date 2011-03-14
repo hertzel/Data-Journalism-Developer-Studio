@@ -1,0 +1,14 @@
+
+[Desktop Entry]
+Version=1.0
+Name=Run Me First
+Comment=Sets up RStudio Server
+GenericName=Sets up RStudio Server
+Exec=/home/studio/run-me-first.bash
+Terminal=true
+X-MultipleArgs=false
+Type=Application
+Icon=/usr/share/pixmaps/faces/chess.jpg
+X-Desktop-File-Install-Version=0.16
+Name[en_US]=Run Me First
+GenericName[en_US.utf8]=Sets up RStudio Server

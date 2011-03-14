@@ -1,0 +1,24 @@
+update.packages(ask=FALSE, 
+  repos=c(
+    'http://cran.cnr.berkeley.edu'
+  )
+)
+
+install.packages(c(
+  'sm',
+  'odfWeave',
+  'brew',
+  'edtdbg',
+  'reshape',
+  'ggplot2',
+  'SoDA',
+  'audio',
+  'seewave',
+  'sound',
+  'tuneR',
+  'rJava',
+  'ctv'),
+  repos=c(
+    'http://cran.cnr.berkeley.edu'
+  )
+)

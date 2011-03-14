@@ -1,0 +1,7 @@
+o conf prerequisites_policy follow
+o conf connect_to_internet_ok yes
+o conf build_requires_install_policy yes
+o conf tar_verbosity none
+o conf perl5lib_verbosity none
+o conf load_module_verbosity none
+o conf commit
