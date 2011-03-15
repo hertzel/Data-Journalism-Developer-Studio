@@ -17,7 +17,7 @@
 sudo zypper --non-interactive in wget git gitk git-gui
 
 # all the vim stuff
-sudo zypper --non-interactive in gvim vim-enhanced
+sudo zypper --non-interactive in gvim vim
 
 # command line conveniences
 sudo zypper --non-interactive in command-not-found findutils-locate
