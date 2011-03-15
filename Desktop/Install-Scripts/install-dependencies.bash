@@ -27,8 +27,7 @@ sudo zypper --non-interactive in fftw3 fftw3-devel fftw3-threads \
   fftw3-threads-devel freeglut-devel libpng14-devel
 
 # needed for LaTeX / SWeave
-sudo zypper --non-interactive in texlive-bin-latex texlive-bin
-#libxml2-devel
+sudo zypper --non-interactive in texlive-bin-latex texlive-bin libxml2-devel
 
 # R, Chromium and nokogiri
 sudo zypper addrepo -cf \
