@@ -52,3 +52,6 @@ for i in \
 do
   echo "notest install $i" | cpan 2>&1 | tee $i.log
 done
+
+# get rid of space-wasters
+rm -fr ~/.cpan/build ~/.cpan/sources
