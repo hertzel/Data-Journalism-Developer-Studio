@@ -22,9 +22,3 @@ install.packages(c(
     'http://cran.cnr.berkeley.edu'
   )
 )
-library(ctv)
-install.views('ReproducibleResearch',
-  repos=c(
-    'http://cran.cnr.berkeley.edu'
-  )
-)
