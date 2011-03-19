@@ -1,0 +1,15 @@
+install.packages(c(
+  'relimp',
+  'multcomp',
+  'leaps',
+  'aplpack',
+  'effects',
+  'tm',
+  'tm.plugin.mail',
+  'Rcmdr',
+  'RcmdrPlugin.Export',
+  'RcmdrPlugin.TeachingDemos',
+  'RcmdrPlugin.TextMining',
+  'RcmdrPlugin.epack',
+  'RcmdrPlugin.sos'),
+  repos='http://cran.cnr.berkeley.edu')
