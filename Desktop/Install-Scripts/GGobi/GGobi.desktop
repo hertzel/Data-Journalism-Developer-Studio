@@ -1,0 +1,13 @@
+
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=false
+Icon[en_US]=/usr/local/share/pixmaps/ggobi.png
+Name[en_US]=GGobi
+Exec=ggobi
+Comment[en_US]=GGobi Interactive Data Visualization Environment
+Name=GGobi
+Comment=GGobi Interactive Visualization Environment
+Icon=/usr/local/share/pixmaps/ggobi.png
+Comment[en_US.UTF-8]=GGobi Interactive Data Visualization Environment
