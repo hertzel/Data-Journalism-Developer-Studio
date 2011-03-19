@@ -1,7 +1,7 @@
 #! /bin/bash -v
 
 # base pattern
-sudo zypper install -y -t pattern multimedia multimedia_opt
+sudo zypper install -y -t pattern multimedia
 
 # audio
 sudo zypper install -y audacity
