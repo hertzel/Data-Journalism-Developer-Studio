@@ -1,5 +1,7 @@
 #! /bin/bash -v
 
+sudo su - # get the visudo and /etc/group stuff done!
+
 # pull down external stuff
 ./git-submodule-update.bash
 
