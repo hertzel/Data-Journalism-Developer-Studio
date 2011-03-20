@@ -6,6 +6,7 @@ install.packages(c(
   'leaps',
   'aplpack',
   'effects',
+  'lmtest',
   'tm',
   'tm.plugin.mail',
   'Rcmdr',
