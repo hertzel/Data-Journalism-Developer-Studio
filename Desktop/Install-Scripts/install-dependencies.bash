@@ -45,9 +45,9 @@ sudo zypper --non-interactive in tesseract
 # RSRuby - Ruby / R interface
 if [ -e /usr/lib/R ]
 then
-  gem install rsruby -- --with-R-dir=/usr/lib/R
+  sudo gem install rsruby -- --with-R-dir=/usr/lib/R
 fi
 if [ -e /usr/lib64/R ]
 then
-  gem install rsruby -- --with-R-dir=/usr/lib64/R
+  sudo gem install rsruby -- --with-R-dir=/usr/lib64/R
 fi
