@@ -41,25 +41,3 @@ sudo zypper --non-interactive in chromium vpx-tools
 sudo zypper --non-interactive in R-patched R-patched-devel
 sudo zypper --non-interactive in rubygem-nokogiri
 sudo zypper --non-interactive in tesseract
-
-# RSRuby - Ruby / R interface
-if [ -e /usr/lib/R ]
-then
-  sudo gem install rsruby -- --with-R-dir=/usr/lib/R
-fi
-if [ -e /usr/lib64/R ]
-then
-  sudo gem install rsruby -- --with-R-dir=/usr/lib64/R
-fi
-
-# RPy2 - Python / R interface
-DIR=rpy2-2.1.8
-WHAT=${DIR}.tar.gz
-WHERE=http://downloads.sourceforge.net/project/rpy/rpy2/2.1.x
-sudo rm -fr ${WHAT} ${DIR}
-wget ${WHERE}/${WHAT}
-tar xf ${WHAT}
-pushd ${DIR}
-sudo python setup.py install
-popd
-sudo rm -fr ${WHAT} ${DIR}
