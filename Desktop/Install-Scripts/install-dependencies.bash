@@ -41,3 +41,13 @@ sudo zypper --non-interactive in chromium vpx-tools
 sudo zypper --non-interactive in R-patched R-patched-devel
 sudo zypper --non-interactive in rubygem-nokogiri
 sudo zypper --non-interactive in tesseract
+
+# RSRuby - Ruby / R interface
+if [ -e /usr/lib/R ]
+then
+  gem install rsruby -- --with-R-dir=/usr/lib/R
+fi
+if [ -e /usr/lib64/R ]
+then
+  gem install rsruby -- --with-R-dir=/usr/lib64/R
+fi
