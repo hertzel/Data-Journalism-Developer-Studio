@@ -6,6 +6,7 @@ for i in \
   GGobi/ \
   JGR/ \
   LibreOffice/ \
+  MachineLearning/ \
   Mallet/ \
   Mondrian/ \
   Multimedia/ \
