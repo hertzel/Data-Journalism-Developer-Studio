@@ -1,5 +1,7 @@
 #! /bin/bash -v
 
+export PATH=$PATH:/usr/local/bin
+
 mkdir -p /usr/local/src
 pushd /usr/local/src
 export DIR=node-v0.4.4
@@ -13,6 +15,10 @@ pushd ${DIR}
 ./configure
 make 
 make install
+
+# now install npm
+curl http://npmjs.org/install.sh | sh
+
 /sbin/ldconfig
 /sbin/SuSEconfig
 popd
