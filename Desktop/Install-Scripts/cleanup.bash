@@ -14,6 +14,7 @@ for i in \
   Mondrian/ \
   Multimedia/ \
   NaturalLanguageProcessing/ \
+  Node/ \
   OpenFTS/ \
   Perl-packages/ \
   Python-NLTK/ \
