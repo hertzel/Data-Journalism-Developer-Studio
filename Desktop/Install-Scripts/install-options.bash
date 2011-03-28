@@ -15,6 +15,7 @@ for i in \
   OpenFTS/ \
   Perl-packages/ \
   Python-NLTK/ \
+  Rapache/ \
   Rattle/ \
   Rcmdr/ \
   ReproducibleResearch/ \
