@@ -6,6 +6,7 @@ update.packages(ask=FALSE,
 
 install.packages(c(
   'googleVis',
+  'R.rsp',
   'sm',
   'odfWeave',
   'brew',
