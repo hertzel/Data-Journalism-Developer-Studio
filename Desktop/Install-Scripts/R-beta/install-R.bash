@@ -2,6 +2,14 @@
 
 # first, get rid of installed R!
 zypper remove R-patched R-patched-devel
+if [ -e /usr/lib/R ]
+then
+  rm -fr /usr/lib/R
+fi
+if [ -e /usr/lib64/R ]
+then
+  rm -fr /usr/lib64/R
+fi
 
 mkdir -p /usr/local/src
 cd /usr/local/src
