@@ -38,7 +38,7 @@ make install-pdf
 cd ..
 
 # clean up
-#rm -fr ${WHAT} ${DIR}
+rm -fr ${WHAT} ${DIR}
 
 /sbin/ldconfig
 /sbin/SuSEconfig
