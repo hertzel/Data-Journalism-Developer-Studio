@@ -20,8 +20,10 @@ for i in \
   Python-NLTK/ \
   Rapache/ \
   Rattle/ \
+  R-beta/ \
   Rcmdr/ \
   ReproducibleResearch/ \
+  R-patched/ \
   RPy2/ \
   RSRuby/ \
   Spatial/ \
