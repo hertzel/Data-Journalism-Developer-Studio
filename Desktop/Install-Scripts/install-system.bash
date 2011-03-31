@@ -13,3 +13,11 @@ if [ -e /usr/lib64/R/etc/Renviron ]
 then
   vim /usr/lib64/R/etc/Renviron
 fi
+if [ -e /usr/local/lib/R/etc/Renviron ]
+then
+  vim /usr/local/lib/R/etc/Renviron
+fi
+if [ -e /usr/local/lib64/R/etc/Renviron ]
+then
+  vim /usr/local/lib64/R/etc/Renviron
+fi
