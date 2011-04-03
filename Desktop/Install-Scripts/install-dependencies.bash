@@ -39,5 +39,5 @@ sudo zypper update
 
 sudo zypper --non-interactive in chromium vpx-tools
 sudo zypper --non-interactive in R-patched R-patched-devel
-sudo zypper --non-interactive in rubygem-nokogiri
+sudo zypper --non-interactive in rubygem-nokogiri rubygem-mechanize
 sudo zypper --non-interactive in tesseract
