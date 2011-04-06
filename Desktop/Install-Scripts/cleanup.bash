@@ -3,6 +3,7 @@ sudo rm -fr rstudio
 sudo rm -fr build
 rm *.log
 for i in \
+  BARD/ \
   BrowserDevelopment/ \
   ComputationalSeismology/ \
   Finance/ \

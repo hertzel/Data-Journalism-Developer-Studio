@@ -1,5 +1,6 @@
 #! /bin/bash -v
 for i in \
+  BARD/ \
   BrowserDevelopment/ \
   ComputationalSeismology/ \
   Finance/ \
