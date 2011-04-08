@@ -6,6 +6,7 @@ update.packages(ask=FALSE,
 
 install.packages(c(
   'googleVis',
+  'gooJSON',
   'R.rsp',
   'sm',
   'odfWeave',
@@ -19,6 +20,7 @@ install.packages(c(
   'sound',
   'tuneR',
   'rJava',
+  'filehashSQLite',
   'ctv'),
   repos=c(
     'http://cran.cnr.berkeley.edu'
