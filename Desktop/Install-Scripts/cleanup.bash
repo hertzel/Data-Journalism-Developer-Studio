@@ -4,10 +4,12 @@ sudo rm -fr build
 rm *.log
 for i in \
   BARD/ \
+  beancounter/ \
   BrowserDevelopment/ \
   ComputationalSeismology/ \
   Finance/ \
   GGobi/ \
+  gvim/ \
   JGR/ \
   LibreOffice/ \
   MachineLearning/ \
