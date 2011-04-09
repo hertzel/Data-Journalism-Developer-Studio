@@ -16,8 +16,8 @@
 # wget and git may not be there in appliances
 sudo zypper --non-interactive in wget git gitk git-gui
 
-# all the vim stuff
-sudo zypper --non-interactive in gvim vim
+# vim
+sudo zypper --non-interactive in vim
 
 # command line conveniences
 sudo zypper --non-interactive in command-not-found findutils-locate
