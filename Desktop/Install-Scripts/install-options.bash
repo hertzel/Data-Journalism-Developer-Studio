@@ -1,10 +1,12 @@
 #! /bin/bash -v
 for i in \
   BARD/ \
+  beancounter/ \
   BrowserDevelopment/ \
   ComputationalSeismology/ \
   Finance/ \
   GGobi/ \
+  gvim/ \
   JGR/ \
   LibreOffice/ \
   MachineLearning/ \
@@ -14,7 +16,6 @@ for i in \
   NaturalLanguageProcessing/ \
   Node/ \
   OpenFTS/ \
-  Perl-packages/ \
   Python-NLTK/ \
   Rapache/ \
   Rattle/ \
