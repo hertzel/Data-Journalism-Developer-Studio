@@ -1,5 +1,6 @@
 #! /bin/bash -v
 
+cp bashrc ~/.bashrc # define the ls conveniences
 sudo su - # get the visudo and /etc/group stuff done!
 
 # pull down external stuff
