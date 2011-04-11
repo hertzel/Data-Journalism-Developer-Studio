@@ -2,5 +2,5 @@
 
 for i in *.log
 do
-  rm $i
+  rm -f $i
 done
