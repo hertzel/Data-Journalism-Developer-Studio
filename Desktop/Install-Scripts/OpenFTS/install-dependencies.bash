@@ -6,3 +6,4 @@ sudo zypper refresh
 sudo zypper update
 
 sudo zypper install -y postgresql postgresql-devel postgresql-contrib pgadmin3
+sudo zypper install -y flex
