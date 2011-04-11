@@ -10,7 +10,7 @@ make
 make test
 make install
 echo 'eval $(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib)' >>~/.bashrc
-echo 'export MANPATH=${MANPATH}:/home/kipling/perl5/man' >>~/.bashrc
+echo 'export MANPATH=${MANPATH}:~/perl5/man' >>~/.bashrc
 cd ..
 
 . ~/.bashrc # switch to local Perl
