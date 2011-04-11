@@ -1,4 +1,5 @@
 #! /bin/bash -v
+sudo rm -fr .R*
 sudo rm -fr rstudio
 sudo rm -fr build
 rm -f *.log
