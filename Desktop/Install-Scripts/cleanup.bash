@@ -1,7 +1,7 @@
 #! /bin/bash -v
 sudo rm -fr rstudio
 sudo rm -fr build
-rm *.log
+rm -f *.log
 for i in \
   BARD/ \
   beancounter/ \
