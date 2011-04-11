@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+X-SuSE-translate=true
+Encoding=UTF-8
+Name=FreeMind
+Comment=Mind Mapping Tool
+Exec=freemind %F
+Icon=/usr/share/icons/hicolor/32x32/apps/freemind.png
+Terminal=false
+Type=Application
+Categories=Office;ProjectManagement;
+StartupNotify=true
+MimeType=application/x-freemind
