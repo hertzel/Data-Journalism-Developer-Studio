@@ -5,6 +5,7 @@ for i in \
   BrowserDevelopment/ \
   ComputationalSeismology/ \
   Finance/ \
+  freemind/ \
   GGobi/ \
   gvim/ \
   JGR/ \
@@ -24,7 +25,8 @@ for i in \
   RPy2/ \
   RSRuby/ \
   Spatial/ \
-  Sweave-LyX/
+  Sweave-LyX/ \
+  vym/
 do
   pushd ${i}
   ./cleanup.bash
