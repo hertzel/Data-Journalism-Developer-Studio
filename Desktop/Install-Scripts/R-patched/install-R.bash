@@ -39,7 +39,6 @@ export R_PDFVIEWER='evince'
 make
 make pdf
 make info
-make check
 make install
 make install-info
 make install-pdf
