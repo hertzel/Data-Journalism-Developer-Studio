@@ -1,1 +1,1 @@
-#! /bin/bash -v
+../base-cleanup.bash

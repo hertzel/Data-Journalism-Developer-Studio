@@ -1,8 +1,5 @@
 #! /bin/bash -v
 
-for i in *.log
-do
-  rm -f $i
-done
+../base-cleanup.bash
 rm -fr Search*
 rm -fr lib*

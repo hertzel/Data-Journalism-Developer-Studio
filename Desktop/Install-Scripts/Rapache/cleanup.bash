@@ -1,8 +1,4 @@
 #! /bin/bash -v
 
+../base-cleanup.bash
 sudo rm -fr rapache*
-for i in *.log
-do
-  rm -f $i
-done
-rm .R*
