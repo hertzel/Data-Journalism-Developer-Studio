@@ -40,5 +40,5 @@ sudo zypper update
 sudo zypper --non-interactive in chromium vpx-tools
 sudo zypper --non-interactive in R-patched R-patched-devel
 sudo zypper --non-interactive in rubygem-nokogiri rubygem-mechanize \
-  rubygem-sqlite3 rubygem-json rubygem-sqlite3-doc
+  rubygem-sqlite3 rubygem-sqlite3-doc rubygem-json rubygem-json-doc
 sudo zypper --non-interactive in tesseract
