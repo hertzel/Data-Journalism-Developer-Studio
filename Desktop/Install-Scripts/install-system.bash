@@ -21,3 +21,6 @@ if [ -e /usr/local/lib64/R/etc/Renviron ]
 then
   vim /usr/local/lib64/R/etc/Renviron
 fi
+
+# workaround for ctv bug
+R CMD INSTALL ctv_0.7-5.tar.gz
