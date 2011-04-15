@@ -1,5 +1,5 @@
 #! /bin/bash -v
-sudo ./base-cleanup.bash
+./base-cleanup.bash
 sudo rm -fr rstudio
 sudo rm -fr build
 for i in \
@@ -26,7 +26,6 @@ for i in \
   Rattle/ \
   Rcmdr/ \
   ReproducibleResearch/ \
-  R-patched/ \
   RPy2/ \
   RSRuby/ \
   Spatial/ \
