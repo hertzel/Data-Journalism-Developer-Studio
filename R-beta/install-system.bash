@@ -1,1 +1,1 @@
-../install-system.bash
+../Desktop/Install-Scripts/install-system.bash

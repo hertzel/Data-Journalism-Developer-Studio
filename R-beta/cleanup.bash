@@ -1,1 +1,1 @@
-../base-cleanup.bash
+../Desktop/Install-Scripts/base-cleanup.bash
