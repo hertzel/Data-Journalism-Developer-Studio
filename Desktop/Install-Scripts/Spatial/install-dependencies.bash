@@ -19,6 +19,3 @@ sudo zypper install -y libgeos-devel libgeos-docs
 sudo zypper install -y libitpp-devel libitpp-doc
 sudo zypper install -y qgis qgis-devel qgis-plugin-grass
 sudo zypper install -y tktable
-sudo zypper refresh
-sudo zypper update
-
