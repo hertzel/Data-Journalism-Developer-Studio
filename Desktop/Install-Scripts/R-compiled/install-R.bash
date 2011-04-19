@@ -1,18 +1,7 @@
 #! /bin/bash -v
 
-# first, get rid of installed R!
-zypper remove R-patched R-patched-devel
-if [ -e /usr/lib/R ]
-then
-  rm -fr /usr/lib/R
-fi
-if [ -e /usr/lib64/R ]
-then
-  rm -fr /usr/lib64/R
-fi
-
 mkdir -p /usr/local/src
-cd /usr/local/src
+pushd /usr/local/src
 export WHERE=ftp://ftp.stat.math.ethz.ch/Software/R
 export DIR=R-patched
 export WHAT=R-patched.tar.gz
@@ -20,14 +9,17 @@ rm -fr ${WHAT} ${DIR}
 wget ${WHERE}/${WHAT}
 tar xf ${WHAT}
 rm -fr ${WHAT}
+popd
 
-cd ${DIR}
+mkdir -p /usr/local/R-compiled
+pushd /usr/local/R-compiled
 export R_PAPERSIZE='letter'
 export R_BROWSER='chromium'
 export R_PDFVIEWER='evince'
-./configure \
+/usr/local/src/${DIR}/configure \
   --enable-threads \
   --enable-static \
+  --enable-shared \
   --enable-R-profiling \
   --enable-BLAS-shlib \
   --enable-R-shlib \
@@ -38,10 +30,9 @@ export R_PDFVIEWER='evince'
   --with-jpeglib \
   --with-x
 make
-make info
-make install
-make install-info
-cd ..
+make check
+popd
+exit
 
 /sbin/ldconfig
 /sbin/SuSEconfig
