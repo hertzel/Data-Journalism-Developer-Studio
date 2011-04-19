@@ -19,6 +19,7 @@ export WHAT=R-patched.tar.gz
 rm -fr ${WHAT} ${DIR}
 wget ${WHERE}/${WHAT}
 tar xf ${WHAT}
+rm -fr ${WHAT}
 
 cd ${DIR}
 export R_PAPERSIZE='letter'
@@ -37,15 +38,10 @@ export R_PDFVIEWER='evince'
   --with-jpeglib \
   --with-x
 make
-make pdf
 make info
 make install
 make install-info
-make install-pdf
 cd ..
-
-# clean up
-rm -fr ${WHAT} ${DIR}
 
 /sbin/ldconfig
 /sbin/SuSEconfig
