@@ -11,11 +11,16 @@ tar xf ${WHAT}
 rm -fr ${WHAT}
 popd
 
-mkdir -p /usr/local/R-compiled
-pushd /usr/local/R-compiled
+export BUILD=/usr/local/R-compiled
+rm -fr ${BUILD}
+mkdir -p ${BUILD}
+pushd ${BUILD}
 export R_PAPERSIZE='letter'
 export R_BROWSER='chromium'
 export R_PDFVIEWER='evince'
+export R_ENABLE_JIT=3
+export R_COMPILE_PKGS=1
+export R_COMPILER_SUPPRESS_ALL=1
 /usr/local/src/${DIR}/configure \
   --enable-threads \
   --enable-static \
@@ -29,8 +34,8 @@ export R_PDFVIEWER='evince'
   --with-libpng \
   --with-jpeglib \
   --with-x
-make
-make check
+make bytecode 2>&1 | tee make-bytecode.log
+make check-all 2>&1 | tee check-all.log
 popd
 exit
 
