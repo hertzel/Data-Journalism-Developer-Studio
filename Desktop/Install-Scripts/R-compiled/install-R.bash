@@ -35,7 +35,6 @@ export R_PDFVIEWER='/usr/bin/evince'
   --with-x
 make bytecode 2>&1 | tee bytecode.log
 make pdf 2>&1 | tee pdf.log
-#export R_COMPILER_SUPPRESS_ALL=1
 export PATH=/usr/local/R-compiled/bin:${PATH}
 export R_COMPILE_PKGS=1
 export R_ENABLE_JIT=0

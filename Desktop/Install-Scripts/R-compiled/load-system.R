@@ -1,1 +1,28 @@
-../load-system.R
+update.packages(ask=FALSE, 
+  repos=c(
+    'http://cran.cnr.berkeley.edu'
+  )
+)
+
+install.packages(c(
+  'googleVis',
+  'gooJSON',
+  'R.rsp',
+  'sm',
+  'odfWeave',
+  'brew',
+  'edtdbg',
+  'reshape',
+  'ggplot2',
+  'SoDA',
+  'audio',
+  'seewave',
+  'sound',
+  'tuneR',
+  'rJava',
+  'filehashSQLite',
+  'ctv'),
+  repos=c(
+    'http://cran.cnr.berkeley.edu'
+  )
+)
