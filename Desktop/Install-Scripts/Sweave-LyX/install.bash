@@ -7,7 +7,7 @@ cp test.lyx Sweave-test-1.lyx ~/.lyx/examples/
 
 # now install in TeX 
 sudo mkdir -p /usr/share/texmf/tex/latex/R
-for d in "local/lib" "local/lib64" "lib" "lib64" "~/R-compiled/lib"
+for d in "local/lib" "local/lib64" "lib" "lib64"
 do
   if [[ -e /usr/${d}/R/share/texmf ]]
   then
