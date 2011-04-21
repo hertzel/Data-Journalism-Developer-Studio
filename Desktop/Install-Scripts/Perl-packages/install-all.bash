@@ -1,17 +1,19 @@
 #! /bin/bash -v
 
-# local stuff - no network required
+# install "local-lib"
 vi ~/.bashrc
 rm -fr ~/.cpan ~/perl5 # clean slate
+wget \
+  http://search.cpan.org/CPAN/authors/id/A/AP/APEIRON/local-lib-1.008004.tar.gz
 tar xf local-lib*gz
-cd local-lib*
+pushd local-lib*
 perl Makefile.PL --bootstrap
 make
 make test
 make install
 echo 'eval $(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib)' >>~/.bashrc
 echo 'export MANPATH=${MANPATH}:~/perl5/man' >>~/.bashrc
-cd ..
+popd
 
 . ~/.bashrc # switch to local Perl
 cpan < yesyes # first, autoconfigure
