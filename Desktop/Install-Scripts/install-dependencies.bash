@@ -14,7 +14,7 @@
 #
 
 # wget and git may not be there in appliances
-sudo zypper --non-interactive in wget git gitk git-gui
+sudo zypper --non-interactive in wget git-core
 
 # vim
 sudo zypper --non-interactive in vim
@@ -40,5 +40,5 @@ sudo zypper update
 sudo zypper --non-interactive in chromium vpx-tools
 sudo zypper --non-interactive in R-patched R-patched-devel
 sudo zypper --non-interactive in rubygem-nokogiri rubygem-mechanize \
-  rubygem-sqlite3 rubygem-sqlite3-doc rubygem-json rubygem-json-doc
+  rubygem-sqlite3 rubygem-json
 sudo zypper --non-interactive in tesseract
