@@ -21,6 +21,7 @@ cpan CPAN # next, update CPAN itself
 cpan < prep.cpan # set config options
 
 for i in \
+  Net::SSLeay \
   Statistics::R \
   Statistics::R::Bridge::Linux \
   Facebook \
