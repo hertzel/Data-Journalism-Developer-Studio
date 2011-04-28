@@ -7,6 +7,7 @@ install.packages(c(
   'network',
   'numDeriv',
   'sna',
+  'networksis',
   'igraph',
   'topicmodels',
   'stringkernels'),
