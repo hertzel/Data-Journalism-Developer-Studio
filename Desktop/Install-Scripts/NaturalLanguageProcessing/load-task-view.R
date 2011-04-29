@@ -3,12 +3,6 @@ install.packages(c(
   'textir',
   'lda',
   'OAIHarvester',
-  'statnet',
-  'network',
-  'numDeriv',
-  'sna',
-  'networksis',
-  'igraph',
   'topicmodels',
   'stringkernels'),
   repos='http://cran.cnr.berkeley.edu'
