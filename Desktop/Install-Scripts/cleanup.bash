@@ -10,6 +10,7 @@ for i in \
   Finance/ \
   freemind/ \
   GGobi/ \
+  GNOME3Preview/ \
   gvim/ \
   JGR/ \
   LibreOffice/ \
