@@ -1,0 +1,13 @@
+install.packages(c(
+  "SciViews",
+  "svMisc",
+  "svSocket",
+  "svGUI",
+  "svIDE",
+  "svDialogs",
+  "svSweave",
+  "svTools",
+  "svUnit",
+  "svWidgets",
+  "tcltk2"),
+  repos='http://cran.cnr.berkeley.edu')
