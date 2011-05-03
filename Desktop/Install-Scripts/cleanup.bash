@@ -29,6 +29,7 @@ for i in \
   ReproducibleResearch/ \
   RPy2/ \
   Rubygems/ \
+  SciViews-R/ \
   Spatial/ \
   Sweave-LyX/ \
   vym/
