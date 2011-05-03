@@ -10,7 +10,6 @@ for i in \
   Finance/ \
   freemind/ \
   GGobi/ \
-  GNOME3Preview/ \
   gvim/ \
   JGR/ \
   LibreOffice/ \
@@ -32,6 +31,7 @@ for i in \
   SciViews-R/ \
   Spatial/ \
   Sweave-LyX/ \
+  Tracker/ \
   vym/
 do
   pushd ${i}
