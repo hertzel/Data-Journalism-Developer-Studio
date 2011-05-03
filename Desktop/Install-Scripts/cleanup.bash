@@ -28,7 +28,7 @@ for i in \
   Rcmdr/ \
   ReproducibleResearch/ \
   RPy2/ \
-  RSRuby/ \
+  Rubygems/ \
   Spatial/ \
   Sweave-LyX/ \
   vym/
