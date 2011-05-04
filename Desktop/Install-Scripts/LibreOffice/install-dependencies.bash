@@ -5,7 +5,8 @@ sudo zypper addrepo -cf \
 sudo zypper refresh
 sudo zypper update
 
-sudo zypper install -y postgresql postgresql-devel postgresql-contrib pgadmin3
+sudo zypper install -y postgresql postgresql-devel postgresql-contrib \
+  pgadmin3 postgresql-docs
 sudo zypper install -y libreoffice
 sudo zypper install -y libreoffice-base
 sudo zypper install -y libreoffice-base-drivers-postgresql
