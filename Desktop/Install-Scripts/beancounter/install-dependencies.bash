@@ -5,4 +5,5 @@ sudo zypper addrepo -cf \
 sudo zypper refresh
 sudo zypper update
 
-sudo zypper install -y postgresql postgresql-devel postgresql-contrib pgadmin3
+sudo zypper install -y postgresql postgresql-devel postgresql-contrib \
+  pgadmin3 perl-DBD-Pg
