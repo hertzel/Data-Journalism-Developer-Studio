@@ -2,6 +2,8 @@
 
 sudo zypper addrepo -cf \
   http://download.opensuse.org/repositories/server:/database:/postgresql/openSUSE_11.4/server:database:postgresql.repo
+sudo zypper addrepo -cf \
+  http://download.opensuse.org/repositories/LibreOffice:/Stable/openSUSE_11.4/LibreOffice:Stable.repo
 sudo zypper refresh
 sudo zypper update
 
