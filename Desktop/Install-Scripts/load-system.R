@@ -5,6 +5,7 @@ update.packages(ask=FALSE,
 )
 
 install.packages(c(
+  'Rook',
   'googleVis',
   'gooJSON',
   'R.rsp',
