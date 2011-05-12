@@ -1,5 +1,9 @@
 #! /bin/bash -v
 
+# needed for R audio  packages
+sudo zypper install -y fftw3 fftw3-devel fftw3-threads fftw3-threads-devel \
+  freeglut-devel libpng14-devel
+
 # base pattern
 sudo zypper install -y -t pattern multimedia
 
