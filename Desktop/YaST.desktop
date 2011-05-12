@@ -1,0 +1,10 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+X-SuSE-translate=true
+Type=Application
+Categories=Settings;System;X-SuSE-Core-System;X-SuSE-ControlCenter-System;
+Name=YaST
+Icon=yast
+GenericName=Administrator Settings
+Exec=/usr/bin/xdg-su -c /sbin/yast2
+Encoding=UTF-8
