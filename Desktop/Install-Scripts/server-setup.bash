@@ -14,11 +14,9 @@ sudo cp pamscript /etc/pam.d/rstudio
 # firewall - open port 8787
 sudo /sbin/yast2 firewall
 
-# NTP server
-sudo /sbin/yast2 ntp-client
-
 # run levels
-sudo /sbin/yast2 runlevel
+sudo /sbin/chkconfig rstudio-server on
+sudo /etc/init.d/rstudio-server restart
 
 # we should be ready - browse to IP address
 /sbin/ifconfig
