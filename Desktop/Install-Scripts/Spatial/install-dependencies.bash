@@ -3,12 +3,9 @@
 # Geospatial / Mapping
 sudo zypper addrepo -cf http://download.opensuse.org/repositories/Application:/Geo/openSUSE_11.4/Application:Geo.repo
 sudo zypper addrepo -cf http://download.opensuse.org/repositories/science/openSUSE_11.4/science.repo
-sudo zypper addrepo -cf \
-  http://download.opensuse.org/repositories/server:/database:/postgresql/openSUSE_11.4/server:database:postgresql.repo
 sudo zypper refresh
 sudo zypper update
 
-sudo zypper install -y postgresql postgresql-devel postgresql-contrib pgadmin3
 sudo zypper install -y gdal libgdal-devel perl-gdal
 sudo zypper install -y libnetcdf-devel
 sudo zypper install -y gd-devel

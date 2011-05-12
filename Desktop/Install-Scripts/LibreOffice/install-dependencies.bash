@@ -1,14 +1,11 @@
 #! /bin/bash -v
 
-sudo zypper addrepo -cf \
-  http://download.opensuse.org/repositories/server:/database:/postgresql/openSUSE_11.4/server:database:postgresql.repo
+../install-postgresql.bash
 sudo zypper addrepo -cf \
   http://download.opensuse.org/repositories/LibreOffice:/Stable/openSUSE_11.4/LibreOffice:Stable.repo
 sudo zypper refresh
 sudo zypper update
 
-sudo zypper install -y postgresql postgresql-devel postgresql-contrib \
-  pgadmin3 postgresql-docs
 sudo zypper install -y libreoffice
 sudo zypper install -y libreoffice-base
 sudo zypper install -y libreoffice-base-drivers-postgresql
