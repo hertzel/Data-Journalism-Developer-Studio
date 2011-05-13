@@ -15,8 +15,8 @@ sudo cp pamscript /etc/pam.d/rstudio
 sudo /sbin/yast2 firewall
 
 # run levels
-sudo /sbin/chkconfig rstudio-server on
 sudo /etc/init.d/rstudio-server restart
+sudo /sbin/chkconfig rstudio-server on
 
 # we should be ready - browse to IP address
 /sbin/ifconfig
