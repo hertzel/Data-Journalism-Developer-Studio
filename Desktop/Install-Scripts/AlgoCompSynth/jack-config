@@ -1,0 +1,10 @@
+/etc/security/limits.conf:
+
+@audio   -  rtprio     99
+@audio   -  memlock    unlimited
+
+add user to audio group
+log out and in again
+install qjackctl perl-XML-Twig sox resample flac
+start qjackctl and jack server
+start rosegarden4
