@@ -1,5 +1,12 @@
 #! /bin/bash -v
 
+sudo zypper addrepo -cf \
+  http://download.opensuse.org/repositories/home:/plater/openSUSE_11.4/home:plater.repo
+sudo zypper addrepo -cf \
+  http://download.opensuse.org/repositories/multimedia:/apps/openSUSE_11.4/multimedia:apps.repo
+sudo zypper refresh
+sudo zypper update
+
 # needed for R audio  packages
 sudo zypper install -y fftw3 fftw3-devel fftw3-threads fftw3-threads-devel
 
@@ -32,3 +39,7 @@ sudo zypper install -y gimp-plugins-python
 sudo zypper install -y gimp-save-for-web
 sudo zypper install -y gimp-ufraw ufraw
 sudo zypper install -y gutenprint-gimpplugin
+
+# Algorithmic composition and synthesis
+sudo zypper install -y rosegarden lilypond qjackctl csound cecilia hydrogen \
+  ZynAddSubFX fluidsynth-dssi xsynth-dssi fluidsynth jamin ardour
