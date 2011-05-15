@@ -1,4 +1,5 @@
 install.packages(c(
+  'rgl',
   'audio',
   'seewave',
   'sound',
