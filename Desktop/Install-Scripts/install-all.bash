@@ -6,9 +6,11 @@ sudo su - # get the visudo and /etc/group stuff done!
 # pull down external stuff
 ./git-submodule-update.bash
 
+# hack the https
+sed 's/https:/http:/' rstudio/dependencies/common/install-gwt > workfile
+mv workfile rstudio/dependencies/common/install-gwt
+
 # install Linux dependencies
-cp rstudio/dependencies/common/install-gwt workfile # hack the https
-sed 's/https:/http:/' workfile > rstudio/dependencies/common/install-gwt
 if [ "$1" != "--appliance" ]
 then
   pushd rstudio/dependencies/linux
