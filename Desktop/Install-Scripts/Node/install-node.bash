@@ -19,6 +19,9 @@ make install
 # now install npm
 curl http://npmjs.org/install.sh | sh
 
+# and now.js
+npm install now
+
 /sbin/ldconfig
 /sbin/SuSEconfig
 popd
