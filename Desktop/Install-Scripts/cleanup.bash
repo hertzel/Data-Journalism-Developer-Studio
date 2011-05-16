@@ -29,6 +29,7 @@ for i in \
   RPy2/ \
   Rubygems/ \
   SciViews-R/ \
+  SocialNetworkAnalysis/ \
   Spatial/ \
   Sweave-LyX/ \
   Tracker/ \
