@@ -1,9 +1,6 @@
 #! /bin/bash -v
 
-# let X work
-export DISPLAY=:0.0
-xhost +
-for i in system impro-visor
+for i in impro-visor system
 do
-  sudo ./install-${i}.bash 2>&1 | tee install-${i}.log
+  sudo ./install-${i}.bash 2>&1 | tee ${i}.log
 done
