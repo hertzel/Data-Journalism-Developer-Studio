@@ -1,1 +1,1 @@
-common/install-system.bash
+../common/install-system.bash
