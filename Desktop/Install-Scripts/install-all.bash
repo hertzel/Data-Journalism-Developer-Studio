@@ -8,6 +8,7 @@ sudo su - # get the visudo and /etc/group stuff done!
 
 # hack the https
 sed 's/https:/http:/' rstudio/dependencies/common/install-gwt > workfile
+chmod +x workfile
 mv workfile rstudio/dependencies/common/install-gwt
 
 # install Linux dependencies
