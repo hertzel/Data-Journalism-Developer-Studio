@@ -8,5 +8,5 @@ sudo zypper update
 sudo zypper install -y postgresql postgresql-devel postgresql-contrib \
   postgresql-docs pgadmin3 perl-DBD-Pg
 
-sudo chkconfig postgresql on
+sudo /sbin/chkconfig postgresql on
 sudo /etc/init.d/postgresql restart
