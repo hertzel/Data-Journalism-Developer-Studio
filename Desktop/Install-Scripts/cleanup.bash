@@ -15,6 +15,7 @@ for i in \
   LibreOffice/ \
   MachineLearning/ \
   Mallet/ \
+  Maqetta/ \
   Mondrian/ \
   Multimedia/ \
   NaturalLanguageProcessing/ \
