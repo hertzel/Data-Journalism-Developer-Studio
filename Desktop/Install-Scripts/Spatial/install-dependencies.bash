@@ -1,5 +1,8 @@
 #! /bin/bash -v
 
+# PostgreSQL
+../install-postgresql.bash
+
 # Geospatial / Mapping
 sudo zypper addrepo -cf http://download.opensuse.org/repositories/Application:/Geo/openSUSE_11.4/Application:Geo.repo
 sudo zypper addrepo -cf http://download.opensuse.org/repositories/science/openSUSE_11.4/science.repo
