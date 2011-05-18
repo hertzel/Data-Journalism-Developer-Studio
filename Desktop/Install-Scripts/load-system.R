@@ -6,6 +6,7 @@ update.packages(ask=FALSE,
 
 install.packages(c(
   'Rook',
+  'websockets',
   'googleVis',
   'gooJSON',
   'R.rsp',
