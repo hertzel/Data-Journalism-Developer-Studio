@@ -1,5 +1,5 @@
 #! /bin/bash -v
 
-../base-cleanup.bash
+../common/base-cleanup.bash
 rm -fr Search*
 rm -fr lib*

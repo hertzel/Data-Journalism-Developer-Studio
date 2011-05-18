@@ -1,1 +1,1 @@
-../base-cleanup.bash
+../common/base-cleanup.bash
