@@ -1,3 +1,3 @@
 #! /bin/bash -v
 
-../install-postgresql.bash
+../common/install-postgresql.bash
