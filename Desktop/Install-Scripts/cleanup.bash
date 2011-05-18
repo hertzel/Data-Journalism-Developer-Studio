@@ -1,5 +1,5 @@
 #! /bin/bash -v
-./base-cleanup.bash
+common/base-cleanup.bash
 sudo rm -fr rstudio
 sudo rm -fr build
 for i in \
