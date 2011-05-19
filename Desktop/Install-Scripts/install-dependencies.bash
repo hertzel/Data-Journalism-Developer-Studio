@@ -25,7 +25,7 @@ sudo zypper --non-interactive in command-not-found findutils-locate
 # needed for LaTeX / SWeave
 sudo zypper --non-interactive in texlive-bin-latex texlive-bin libxml2-devel
 
-# R, Chromium and nokogiri
+# R and Chromium
 sudo zypper addrepo -cf \
 http://download.opensuse.org/repositories/openSUSE:/11.4:/Contrib/standard/openSUSE:11.4:Contrib.repo
 sudo zypper addrepo -cf http://download.opensuse.org/repositories/devel:/languages:/R:/patched/openSUSE_11.4/devel:languages:R:patched.repo
@@ -36,3 +36,15 @@ sudo zypper --non-interactive in chromium vpx-tools
 sudo zypper --non-interactive in R-patched R-patched-devel
 sudo zypper --non-interactive in tesseract
 sudo zypper --non-interactive in freeglut-devel libpng14-devel
+
+# Perl basics
+sudo zypper --non-interactive in perl-AnyEvent
+sudo zypper --non-interactive in perl-JSON-XS
+sudo zypper --non-interactive in perl-libwww-perl
+sudo zypper --non-interactive in perl-Net-SSLeay
+sudo zypper --non-interactive in perl-Try-Tiny
+sudo zypper --non-interactive in perl-UNIVERSAL-require
+sudo zypper --non-interactive in perl-WWW-Mechanize
+sudo zypper --non-interactive in perl-XML-XPath
+sudo zypper --non-interactive in perl-YAML
+sudo zypper --non-interactive in perl-YAML-Syck
