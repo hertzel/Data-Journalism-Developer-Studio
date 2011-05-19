@@ -21,15 +21,12 @@ cpan CPAN # next, update CPAN itself
 cpan < prep.cpan # set config options
 
 for i in \
-  Net::SSLeay \
   Statistics::R \
   Statistics::R::Bridge::Linux \
   Facebook \
   URI::Escape \
   MIME::Base64 \
-  XML::XPath \
   Google::Data::JSON \
-  JSON::XS \
   WebService::Bitly \
   POE \
   Data::Dumper \
@@ -41,13 +38,10 @@ for i in \
   HTTP::Client::Parallel \
   Net::Google::Spreadsheets \
   Net::Twitter \
-  Try::Tiny \
-  UNIVERSAL::require \
   HTTP::Date \
   YAML::Tiny \
   Software::License \
   Module::Build \
-  WWW::Mechanize \
   AnyEvent::Twitter::Stream \
   Hash::Flatten \
   Browser::Open \
