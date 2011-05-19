@@ -9,4 +9,4 @@ tar cvf - /usr/sbin/rstudio-server /etc/init.d/rstudio-server \
   /sbin/rcrstudio-server /etc/pam.d/rstudio | bzip2 -9c > rstudio.tar.bz2
 tar cvf - /usr/lib/R | bzip2 -9c > usr-lib-R.tar.bz2
 tar cvf - /usr/local | bzip2 -9c > usr-local.tar.bz2
-tar cvf - .bashrc perl5 .cpan | bzip2 -9c > perl5.tar.bz2
+tar cvf - .bashrc | bzip2 -9c > bashrc.tar.bz2

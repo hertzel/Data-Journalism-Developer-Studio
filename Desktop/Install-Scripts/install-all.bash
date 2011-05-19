@@ -45,11 +45,4 @@ sudo make install 2>&1 | tee ../make-install-desktop.log
 popd
 sudo ln -sf /usr/local/lib/rstudio/bin/rstudio /usr/local/bin/rstudio
 
-# Perl modules
-pushd Perl-packages
-./cleanup.bash
-./install-dependencies.bash
-./install-all.bash
-popd
-
 ./make-archives.bash
