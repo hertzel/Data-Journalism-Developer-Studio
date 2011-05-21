@@ -23,6 +23,7 @@ for i in \
   OpenFTS/ \
   Perl-packages/ \
   Python-NLTK/ \
+  R-compiled/ \
   Rapache/ \
   Rattle/ \
   Rcmdr/ \
