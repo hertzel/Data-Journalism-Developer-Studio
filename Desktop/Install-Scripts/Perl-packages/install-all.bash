@@ -1,8 +1,8 @@
 #! /bin/bash -v
 
-sudo cpan < yesyes # first, autoconfigure
-sudo cpan CPAN # next, update CPAN itself
-sudo cpan < prep.cpan # set config options
+#sudo cpan < yesyes # first, autoconfigure
+#sudo cpan CPAN # next, update CPAN itself
+#sudo cpan < prep.cpan # set config options
 
 for i in \
   Email::Send::Gmail \
@@ -10,7 +10,7 @@ for i in \
   Email::Simple::Creator \
   Facebook \
   Google::Data::JSON \
-  Google::Voice
+  Google::Voice \
   Hash::Flatten \
   HTTP::Client::Parallel \
   MIME::Base64 \

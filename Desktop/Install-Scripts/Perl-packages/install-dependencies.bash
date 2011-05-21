@@ -2,9 +2,9 @@
 
 sudo zypper addrepo -cf \
   http://download.opensuse.org/repositories/devel:/languages:/perl/openSUSE_11.4/devel:languages:perl.repo
-exit
 sudo zypper refresh
 sudo zypper update
+sudo zypper dup --from=devel_languages_perl
 
 sudo zypper install -y perl-AnyEvent-Twitter-Stream
 sudo zypper install -y perl-Browser-Open
