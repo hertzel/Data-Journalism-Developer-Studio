@@ -25,7 +25,10 @@ else
 fi
 
 # install R basics
-sudo ./install-system.bash
+pushd R-compiled
+./install-dependencies.bash
+./install-all.bash
+popd
 
 # build server
 sudo rm -fr build; mkdir -p build
