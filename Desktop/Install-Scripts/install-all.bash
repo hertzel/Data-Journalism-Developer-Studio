@@ -35,7 +35,7 @@ sudo rm -fr build; mkdir -p build
 pushd build
 cmake -DRSTUDIO_TARGET=Server -DCMAKE_BUILD_TYPE=Release \
   ~/Desktop/Install-Scripts/rstudio
-sudo make install 2>&1 | tee ../make-install-server.log
+sudo ../install-rstudio-server.bash
 popd
 ./server-setup.bash
 
@@ -44,8 +44,8 @@ sudo rm -fr build; mkdir -p build
 pushd build
 cmake -DRSTUDIO_TARGET=Desktop -DCMAKE_BUILD_TYPE=Release \
   ~/Desktop/Install-Scripts/rstudio
-sudo make install 2>&1 | tee ../make-install-desktop.log
+sudo ../install-rstudio-desktop.bash
 popd
 sudo ln -sf /usr/local/lib/rstudio/bin/rstudio /usr/local/bin/rstudio
 
-./make-archives.bash
+./make-archives.bash 2>&1 | tee make-archives.log
