@@ -2,42 +2,10 @@
 common/base-cleanup.bash
 sudo rm -fr rstudio
 sudo rm -fr build
-for i in \
-  BARD/ \
-  beancounter/ \
-  BrowserDevelopment/ \
-  ComputationalSeismology/ \
-  Finance/ \
-  freemind/ \
-  GGobi/ \
-  gvim/ \
-  JGR/ \
-  LibreOffice/ \
-  MachineLearning/ \
-  Mallet/ \
-  Maqetta/ \
-  Mondrian/ \
-  Multimedia/ \
-  NaturalLanguageProcessing/ \
-  Node/ \
-  OpenFTS/ \
-  Perl-packages/ \
-  Python-NLTK/ \
-  R-compiled/ \
-  Rapache/ \
-  Rattle/ \
-  Rcmdr/ \
-  ReproducibleResearch/ \
-  RPy2/ \
-  Rubygems/ \
-  SciViews-R/ \
-  SocialNetworkAnalysis/ \
-  Spatial/ \
-  Sweave-LyX/ \
-  Tracker/ \
-  vym/
+for i in */cleanup.bash
 do
-  pushd ${i}
+  j=`echo ${i} | sed 's/cleanup.bash//'`
+  pushd ${j}
   ./cleanup.bash
   popd
 done
