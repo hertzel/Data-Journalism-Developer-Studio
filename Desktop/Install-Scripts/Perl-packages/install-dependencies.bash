@@ -13,6 +13,8 @@ sudo zypper install -y perl-DBD-SQLite
 sudo zypper install -y perl-Email-Send
 sudo zypper install -y perl-Email-Simple
 sudo zypper install -y perl-HTTP-Date
+sudo zypper install -y perl-JSON-XS
+sudo zypper install -y perl-local-lib
 sudo zypper install -y perl-Net-Twitter
 sudo zypper install -y perl-POE
 sudo zypper install -y perl-Software-License

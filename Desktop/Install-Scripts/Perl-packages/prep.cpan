@@ -5,3 +5,4 @@ o conf tar_verbosity none
 o conf perl5lib_verbosity none
 o conf load_module_verbosity none
 o conf commit
+upgrade

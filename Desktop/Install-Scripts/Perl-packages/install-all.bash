@@ -1,9 +1,13 @@
 #! /bin/bash -v
 
-sudo rm -fr /root/.cpan
-sudo cpan < yesyes # first, autoconfigure
-sudo cpan CPAN # next, update CPAN itself
-sudo cpan < prep.cpan # set config options
+rm -fr ~/.cpan ~/perl5 # clean slate
+echo 'eval $(perl -I${HOME}/perl5/lib/perl5 -Mlocal::lib)' >> ~/.bashrc
+echo 'export MANPATH=${MANPATH}:${HOME}/perl5/man' >>~/.bashrc
+vim ~/.bashrc
+. ~/.bashrc
+
+cpan < yesyes.cpan # first, autoconfigure
+cpan < prep.cpan # set config options
 
 for i in \
   Email::Send::Gmail \
@@ -15,7 +19,6 @@ for i in \
   Hash::Flatten \
   HTTP::Client::Parallel \
   MIME::Base64 \
-  Module::Build \
   Net::Google::Spreadsheets \
   Statistics::R \
   Statistics::R::Bridge::Linux \
