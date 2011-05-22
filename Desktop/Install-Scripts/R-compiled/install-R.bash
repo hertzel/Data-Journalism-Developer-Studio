@@ -44,5 +44,7 @@ make pdf 2>&1 | tee pdf.log
 make install | tee install.log
 popd
 
+rm -fr ${SOURCE}
+rm -fr ${BUILD}
 /sbin/ldconfig
 /sbin/SuSEconfig
