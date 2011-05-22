@@ -1,8 +1,9 @@
 #! /bin/bash -v
 
-#sudo cpan < yesyes # first, autoconfigure
-#sudo cpan CPAN # next, update CPAN itself
-#sudo cpan < prep.cpan # set config options
+sudo rm -fr /root/.cpan
+sudo cpan < yesyes # first, autoconfigure
+sudo cpan CPAN # next, update CPAN itself
+sudo cpan < prep.cpan # set config options
 
 for i in \
   Email::Send::Gmail \
