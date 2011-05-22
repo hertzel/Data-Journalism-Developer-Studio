@@ -14,7 +14,8 @@ sudo ln -sf /etc/init.d/rstudio-server /sbin/rcrstudio-server
 sudo cp /usr/local/lib/rstudio-server/extras/pam/rstudio /etc/pam.d/rstudio
 
 # firewall - open port 8787
-sudo /sbin/yast2 firewall
+#sudo /sbin/yast2 firewall
+sudo cp SuSEfirewall2 /etc/sysconfig/SuSEfirewall2
 
 # run levels
 sudo /etc/init.d/rstudio-server restart
