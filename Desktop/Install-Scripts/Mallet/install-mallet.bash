@@ -12,5 +12,6 @@ sudo tar xf ${DIR}.tar.gz
 cd ${DIR}
 sudo ant
 cd ..
+sudo rm -f ${DIR}.tar.gz
 sudo /sbin/ldconfig
 sudo /sbin/SuSEconfig
