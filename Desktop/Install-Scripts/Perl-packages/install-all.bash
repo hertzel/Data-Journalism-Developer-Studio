@@ -7,40 +7,30 @@ vim ~/.bashrc
 . ~/.bashrc
 
 cpan < yesyes.cpan # first, autoconfigure
+cpan CPAN # get latest version
 cpan < prep.cpan # set config options
 
 for i in \
-  AnyEvent::Twitter::Stream
+  AnyEvent::Twitter::Stream \
   Browser::Open \
-  Data::Dumper \
   DBD::SQLite \
-  Email::Send \
-  Email::Send::Gmail \
-  Email::Sender::Simple \
-  Email::Simple \
-  Email::Simple::Creator \
   Facebook \
-  Google::Data::JSON \
-  Google::Voice \
   Hash::Flatten \
-  HTTP::Client::Parallel \
-  HTTP::Date \
   JSON::XS \
-  MIME::Base64 \
-  Module::Build \
-  Net::Google::Spreadsheets \
   Net::Twitter \
-  POE \
-  Software::License \
   Statistics::R \
   Statistics::R::Bridge::Linux \
+  Data::Dumper \
+  Email::Send::Gmail \
+  Email::Send \
+  Email::Sender::Simple \
+  Email::Simple::Creator \
+  Email::Simple \
+  HTTP::Client::Parallel \
+  Net::Google::Spreadsheets \
   Try::Tiny \
-  URI::Escape \
-  UNIVERSAL::require \
   WebService::Bitly \
-  WWW::Mechanize \
-  XML::XPath \
-  YAML::Tiny
+  Google::Voice
 do
   echo "notest install $i" | sudo cpan 2>&1 | tee $i.log
 done
