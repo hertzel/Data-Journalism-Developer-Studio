@@ -14,6 +14,7 @@ for i in \
   Net::Twitter \
   Statistics::R \
   Statistics::R::Bridge::Linux \
+  YAML::Syck \
   Data::Dumper \
   Email::Send::Gmail \
   Email::Send \
