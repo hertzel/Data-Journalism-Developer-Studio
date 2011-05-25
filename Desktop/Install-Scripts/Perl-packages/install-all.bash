@@ -1,13 +1,18 @@
 #! /bin/bash -v
 
 rm -fr ~/.cpan ~/perl5 # clean slate
+tar xf local-lib*gz
+cd local-lib*
+perl Makefile.PL --bootstrap
+make
+make test
+make install
 echo 'eval $(perl -I${HOME}/perl5/lib/perl5 -Mlocal::lib)' >> ~/.bashrc
 echo 'export MANPATH=${MANPATH}:${HOME}/perl5/man' >>~/.bashrc
 vim ~/.bashrc
-. ~/.bashrc
+cd ..
 
-cpan < yesyes.cpan # first, autoconfigure
-cpan CPAN # get latest version
+. ~/.bashrc # switch to local Perl
 cpan < prep.cpan # set config options
 
 for i in \
