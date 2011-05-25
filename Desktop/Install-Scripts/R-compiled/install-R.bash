@@ -36,12 +36,13 @@ ${SOURCE}/${DIR}/configure \
   --with-cairo \
   --with-libpng \
   --with-jpeglib \
-  --with-x
+  --with-x \
+  2>&1 | tee /R-configure.log
 
 # compile
-make 2>&1 | tee make.log
-make pdf 2>&1 | tee pdf.log
-make install | tee install.log
+make 2>&1 | tee /R-make.log
+make pdf 2>&1 | tee /R-pdf.log
+make install | tee /R-install.log
 popd
 
 rm -fr ${SOURCE}

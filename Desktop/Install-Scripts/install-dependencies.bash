@@ -22,8 +22,12 @@ sudo zypper --non-interactive in vim
 # command line conveniences
 sudo zypper --non-interactive in command-not-found findutils-locate
 
+# needed for R tcl/tk builds
+sudo zypper --non-interactive in tcl-devel tk-devel
+
 # needed for LaTeX / SWeave
-sudo zypper --non-interactive in texlive-bin-latex texlive-bin libxml2-devel
+sudo zypper --non-interactive in texlive-bin-latex texlive-bin libxml2-devel \
+  texinfo
 
 # Chromium
 sudo zypper addrepo -cf \
