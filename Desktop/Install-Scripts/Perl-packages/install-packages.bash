@@ -1,5 +1,7 @@
 #! /bin/bash -v
 
+. ~/.bashrc
+
 for i in \
   AnyEvent::Twitter::Stream \
   Browser::Open \
