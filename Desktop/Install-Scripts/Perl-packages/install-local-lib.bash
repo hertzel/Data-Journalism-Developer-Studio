@@ -15,5 +15,5 @@ popd
 # hack the configuration so installs work!
 cpan < prep1.cpan
 cp ~/.cpan/CPAN/MyConfig.pm .
-sed "s:/root/:/${HOME}/:" MyConfig.pm > ~/.cpan/CPAN/MyConfig.pm .
+sed "s:/root/:/${HOME}/:" MyConfig.pm > ~/.cpan/CPAN/MyConfig.pm
 rm MyConfig.pm
