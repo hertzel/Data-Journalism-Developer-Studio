@@ -1,9 +1,17 @@
 #! /bin/bash
 
+# do all the dependencies first - minimizes babysitting
+for i in */cleanup.bash
+do
+  j=`echo ${i} | sed 's/cleanup.bash//'`
+  pushd ${j}
+  ./cleanup.bash
+  ./install-dependencies.bash
+  popd
+done
+
 # Perl packages have to be done first for a few other things to work
 pushd Perl-packages
-./cleanup.bash
-./install-dependencies.bash
 ./install-all.bash
 popd
 
@@ -13,8 +21,6 @@ do
   then
     j=`echo ${i} | sed 's/cleanup.bash//'`
     pushd ${j}
-    ./cleanup.bash
-    ./install-dependencies.bash
     ./install-all.bash
     popd
   fi
