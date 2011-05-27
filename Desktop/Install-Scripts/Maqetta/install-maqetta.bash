@@ -1,8 +1,8 @@
 #! /bin/bash -v
 
 export WHERE=http://maqetta.org/downloads
-export DIR=maqetta-preview
-export WHAT=${DIR}.zip
+export DIR=maqetta
+export WHAT=maqetta-20110524-1113.zip
 
 mkdir -p ~/local
 pushd ~/local
