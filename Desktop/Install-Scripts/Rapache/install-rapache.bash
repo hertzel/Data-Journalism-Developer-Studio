@@ -1,5 +1,6 @@
 #! /bin/bash -v
 
+export PATH=/usr/local/bin:$PATH
 mkdir -p /usr/local/src
 pushd /usr/local/src
 export WHERE=http://biostat.mc.vanderbilt.edu/rapache/files
