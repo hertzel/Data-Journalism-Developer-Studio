@@ -42,4 +42,4 @@ sudo zypper install -y gutenprint-gimpplugin
 
 # Algorithmic composition and synthesis
 sudo zypper install -y rosegarden lilypond qjackctl csound cecilia hydrogen \
-  ZynAddSubFX fluidsynth-dssi xsynth-dssi fluidsynth jamin ardour
+  ZynAddSubFX fluidsynth-dssi xsynth-dssi fluidsynth jamin ardour noteedit
