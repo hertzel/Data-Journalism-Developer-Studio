@@ -1,6 +1,7 @@
 #! /bin/bash -v
 
-sudo zypper addrepo -cf http://download.opensuse.org/repositories/devel:/languages:/ruby:/extensions/openSUSE_11.4/devel:languages:ruby:extensions.repo
+sudo zypper addrepo -cf \
+  http://download.opensuse.org/repositories/devel:/languages:/ruby:/extensions/openSUSE_11.4/devel:languages:ruby:extensions.repo
 sudo zypper refresh
 sudo zypper update
 
