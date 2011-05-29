@@ -1,20 +1,22 @@
 #! /bin/bash -v
 
-sudo zypper addrepo -cf \
-  http://download.opensuse.org/repositories/home:/plater/openSUSE_11.4/home:plater.repo
-sudo zypper addrepo -cf \
-  http://download.opensuse.org/repositories/multimedia:/apps/openSUSE_11.4/multimedia:apps.repo
-sudo zypper refresh
-sudo zypper update
-
 # needed for R audio  packages
 sudo zypper install -y fftw3 fftw3-devel fftw3-threads fftw3-threads-devel
 
 # base pattern
 sudo zypper install -y -t pattern multimedia
-
-# audio
+sudo zypper install -y yast2-sound
+sudo zypper install -y dvd+rw-tools
+sudo zypper install -y vorbis-tools
+sudo zypper install -y grip
+sudo zypper install -y ripit
+sudo zypper install -y abcde
+sudo zypper install -y gstreamer-0_10-plugins-good-extra
 sudo zypper install -y audacity
+sudo zypper install -y timidity
+sudo zypper install -y vdr
+sudo zypper install -y xawtv
+sudo zypper install -y flac
 
 # video and animation
 sudo zypper install -y blender blender-doc
@@ -42,4 +44,4 @@ sudo zypper install -y gutenprint-gimpplugin
 
 # Algorithmic composition and synthesis
 sudo zypper install -y rosegarden lilypond qjackctl csound cecilia hydrogen \
-  ZynAddSubFX fluidsynth-dssi xsynth-dssi fluidsynth jamin ardour noteedit
+  ZynAddSubFX fluidsynth-dssi xsynth-dssi fluidsynth jamin noteedit
