@@ -8,7 +8,6 @@ sudo zypper install -y -t pattern multimedia
 sudo zypper install -y yast2-sound
 sudo zypper install -y dvd+rw-tools
 sudo zypper install -y vorbis-tools
-sudo zypper install -y grip
 sudo zypper install -y ripit
 sudo zypper install -y abcde
 sudo zypper install -y gstreamer-0_10-plugins-good-extra
