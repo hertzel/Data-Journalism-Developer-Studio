@@ -20,7 +20,7 @@ pushd ${BUILD}
 
 # environment variables
 export R_PAPERSIZE='letter'
-export R_BROWSER='/usr/bin/chromium'
+export R_BROWSER='/usr/bin/firefox'
 export R_PDFVIEWER='/usr/bin/evince'
 
 # configure

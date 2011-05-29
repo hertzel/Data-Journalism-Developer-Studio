@@ -14,26 +14,22 @@
 #
 
 # wget and git may not be there in appliances
-sudo zypper --non-interactive in wget git-core
+sudo zypper install -y wget git-core
 
 # vim
-sudo zypper --non-interactive in vim
+sudo zypper install -y vim
 
 # command line conveniences
-sudo zypper --non-interactive in command-not-found findutils-locate
+sudo zypper install -y command-not-found findutils-locate
 
 # needed for R tcl/tk builds
-sudo zypper --non-interactive in tcl-devel tk-devel
+sudo zypper install -y tcl-devel tk-devel
 
 # needed for LaTeX / SWeave
-sudo zypper --non-interactive in texlive-bin-latex texlive-bin libxml2-devel \
-  texinfo
+sudo zypper install -y texlive-bin-latex texlive-bin libxml2-devel texinfo
 
-# Chromium
-sudo zypper addrepo -cf \
-http://download.opensuse.org/repositories/openSUSE:/11.4:/Contrib/standard/openSUSE:11.4:Contrib.repo
-sudo zypper refresh
-sudo zypper update
+# Google Tesseract optical character recognition engine
+sudo zypper install -y tesseract
 
-sudo zypper --non-interactive in chromium vpx-tools
-sudo zypper --non-interactive in tesseract
+# Just in case there's no browser
+sudo zypper install -y MozillaFirefox MozillaFirefox-branding-openSUSE

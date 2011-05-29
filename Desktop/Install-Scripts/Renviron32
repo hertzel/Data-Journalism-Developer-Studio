@@ -22,7 +22,7 @@ R_UNZIPCMD=${R_UNZIPCMD-''}
 R_ZIPCMD=${R_ZIPCMD-''}
 R_BZIPCMD=${R_BZIPCMD-'/usr/bin/bzip2'}
 ## Default browser
-R_BROWSER=${R_BROWSER-'/usr/bin/chromium'}
+R_BROWSER=${R_BROWSER-'/usr/bin/firefox'}
 ## Default editor
 EDITOR=${EDITOR-${VISUAL-vi}}
 ## Default pager
