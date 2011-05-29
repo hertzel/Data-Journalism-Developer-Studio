@@ -1,10 +1,6 @@
 #! /bin/bash -v
 
 ../common/install-postgresql.bash
-sudo zypper addrepo -cf \
-  http://download.opensuse.org/repositories/LibreOffice:/Stable/openSUSE_11.4/LibreOffice:Stable.repo
-sudo zypper refresh
-sudo zypper update
 
 sudo zypper install -y libreoffice \
   libreoffice-base \
