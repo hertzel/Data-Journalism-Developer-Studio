@@ -6,31 +6,31 @@ sudo zypper addrepo -cf \
 sudo zypper refresh
 sudo zypper update
 
-sudo zypper install -y libreoffice
-sudo zypper install -y libreoffice-base
-sudo zypper install -y libreoffice-base-drivers-postgresql
-sudo zypper install -y libreoffice-base-extensions
-sudo zypper install -y libreoffice-branding-openSUSE
-sudo zypper install -y libreoffice-calc
-sudo zypper install -y libreoffice-calc-extensions
-sudo zypper install -y libreoffice-converter
-sudo zypper install -y libreoffice-draw
-sudo zypper install -y libreoffice-draw-extensions
-sudo zypper install -y libreoffice-filters
-sudo zypper install -y libreoffice-filters-optional
-sudo zypper install -y libreoffice-gnome
-sudo zypper install -y libreoffice-help-en-US
-sudo zypper install -y libreoffice-hyphen
-sudo zypper install -y libreoffice-impress
-sudo zypper install -y libreoffice-impress-extensions
-sudo zypper install -y libreoffice-languagetool-en
-sudo zypper install -y libreoffice-mailmerge
-sudo zypper install -y libreoffice-math
-sudo zypper install -y libreoffice-openclipart
-sudo zypper install -y libreoffice-templates-en
-sudo zypper install -y libreoffice-templates-labels-a4
-sudo zypper install -y libreoffice-templates-labels-letter
-sudo zypper install -y libreoffice-templates-presentation-layouts
-sudo zypper install -y libreoffice-thesaurus-en-US
-sudo zypper install -y libreoffice-writer
-sudo zypper install -y libreoffice-writer-extensions
+sudo zypper install -y libreoffice \
+  libreoffice-base \
+  libreoffice-base-drivers-postgresql \
+  libreoffice-base-extensions \
+  libreoffice-branding-openSUSE \
+  libreoffice-calc \
+  libreoffice-calc-extensions \
+  libreoffice-converter \
+  libreoffice-draw \
+  libreoffice-draw-extensions \
+  libreoffice-filters \
+  libreoffice-filters-optional \
+  libreoffice-gnome \
+  libreoffice-help-en-US \
+  libreoffice-hyphen \
+  libreoffice-impress \
+  libreoffice-impress-extensions \
+  libreoffice-languagetool-en \
+  libreoffice-mailmerge \
+  libreoffice-math \
+  libreoffice-openclipart \
+  libreoffice-templates-en \
+  libreoffice-templates-labels-a4 \
+  libreoffice-templates-labels-letter \
+  libreoffice-templates-presentation-layouts \
+  libreoffice-thesaurus-en-US \
+  libreoffice-writer \
+  libreoffice-writer-extensions
