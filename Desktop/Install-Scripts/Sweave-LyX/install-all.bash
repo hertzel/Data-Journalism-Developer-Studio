@@ -29,5 +29,5 @@ do
 done
 sudo texhash
 
-lyx # reconfigure!
+lyx 2>&1 | tee reconfigure.log # reconfigure!
 lyx *.lyx # test
