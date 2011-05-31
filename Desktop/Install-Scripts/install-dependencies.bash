@@ -13,6 +13,10 @@
 #
 #
 
+# repository where Tesseract lives
+sudo zypper addrepo -cf \
+  http://download.opensuse.org/repositories/openSUSE:/11.4:/Contrib/standard/openSUSE:11.4:Contrib.repo
+
 # wget and git may not be there in appliances
 sudo zypper install -y wget git-core
 
