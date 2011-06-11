@@ -2,7 +2,7 @@
 
 export WHERE=http://maqetta.org/downloads
 export DIR=maqetta
-export WHAT=maqetta-20110524-1113.zip
+export WHAT=maqetta-preview.zip
 
 mkdir -p ~/local
 pushd ~/local
