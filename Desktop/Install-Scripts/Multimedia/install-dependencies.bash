@@ -13,8 +13,6 @@ sudo zypper install -y abcde
 sudo zypper install -y gstreamer-0_10-plugins-good-extra
 sudo zypper install -y audacity
 sudo zypper install -y timidity
-sudo zypper install -y vdr
-sudo zypper install -y xawtv
 sudo zypper install -y flac
 
 # video and animation
