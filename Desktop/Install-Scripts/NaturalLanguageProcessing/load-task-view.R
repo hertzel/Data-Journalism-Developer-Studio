@@ -1,5 +1,7 @@
 update.packages(ask=FALSE, repos='http://cran.cnr.berkeley.edu')
 install.packages(c(
+  'rrdf',
+  'SPARQL',
   'textir',
   'lda',
   'OAIHarvester',
