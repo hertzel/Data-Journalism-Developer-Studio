@@ -10,7 +10,7 @@ wget ${WHERE}/${WHAT}
 tar xf ${WHAT}
 cd ${DIR}
 ./configure
-make
+/usr/bin/time make --jobs=3
 make install
 cd ..
 
