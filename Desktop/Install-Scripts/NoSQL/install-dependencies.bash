@@ -7,4 +7,4 @@ http://download.opensuse.org/repositories/Virtualization:/Cloud:/OpenStack/openS
 sudo zypper refresh
 sudo zypper update
 
-sudo zypper install -y redis redis-doc couchdb
+sudo zypper install -y redis redis-doc couchdb mongodb riak
