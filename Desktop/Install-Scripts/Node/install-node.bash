@@ -16,15 +16,6 @@ pushd ${DIR}
 make 
 make install
 
-# now install npm
-curl http://npmjs.org/install.sh | sh
-
-# and now.js
-npm install now
-
-# CoffeeScript
-npm install -g coffee-script
-
 /sbin/ldconfig
 /sbin/SuSEconfig
 popd
