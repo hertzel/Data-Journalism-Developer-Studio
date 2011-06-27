@@ -4,7 +4,7 @@ export PATH=$PATH:/usr/local/bin
 
 mkdir -p /usr/local/src
 pushd /usr/local/src
-export DIR=node-v0.4.4
+export DIR=node-v0.4.8
 export WHAT=${DIR}.tar.gz
 export WHERE=http://nodejs.org/dist
 rm -fr ${WHAT} ${DIR}
