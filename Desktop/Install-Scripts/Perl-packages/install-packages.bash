@@ -4,6 +4,11 @@
 
 for i in \
   AnyEvent::Twitter::Stream \
+  AnyEvent::IRC \
+  AnyEvent::IRC::Connection \
+  AnyEvent::IRC::Client \
+  AnyEvent::IRC::Util \
+  AnyEvent::Intro \
   Browser::Open \
   DBD::SQLite \
   Facebook \
