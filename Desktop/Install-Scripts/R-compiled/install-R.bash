@@ -5,10 +5,15 @@ export SOURCE=/usr/local/src
 rm -fr ${SOURCE}; mkdir -p ${SOURCE}
 pushd ${SOURCE}
 export WHERE=ftp://ftp.stat.math.ethz.ch/Software/R
-export DIR=R-patched
-export WHAT=${DIR}.tar.gz
-rm -fr ${WHAT} ${DIR}
+export WHAT=R-patched.tar.bz2
+rm -fr ${WHAT}
 wget ${WHERE}/${WHAT}
+
+# during the release cycle the directory name can change!!
+export DIR=`tar tf ${WHAT} | head -n 1 | sed 's:/::'`
+
+# extract the archive
+rm -fr ${DIR}
 tar xf ${WHAT}
 rm -fr ${WHAT}
 popd
