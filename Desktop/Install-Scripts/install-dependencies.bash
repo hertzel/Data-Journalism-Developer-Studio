@@ -36,4 +36,5 @@ sudo zypper install -y texlive-bin-latex texlive-bin libxml2-devel texinfo
 sudo zypper install -y tesseract
 
 # Just in case there's no browser
-sudo zypper install -y MozillaFirefox MozillaFirefox-branding-openSUSE
+sudo zypper install -y MozillaFirefox MozillaFirefox-branding-openSUSE \
+  icedtea-web
