@@ -11,5 +11,6 @@ sudo zypper install -y redis redis-doc couchdb mongodb riak
 for i in redis couchdb mongodb riak
 do
   sudo /sbin/chkconfig ${i} on
-  sudo /etc/init.d/${i} restart
+  sudo /etc/init.d/${i} stop
+  sudo /etc/init.d/${i} start
 done
