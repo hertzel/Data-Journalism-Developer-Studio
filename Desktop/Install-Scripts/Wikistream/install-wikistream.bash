@@ -5,7 +5,7 @@ mkdir -p /opt
 pushd /opt
 export DIR=wikistream
 export WHAT=${DIR}.git
-export WHERE=https://github.com/edsu
+export WHERE=http://github.com/edsu
 rm -fr ${DIR}
 git clone ${WHERE}/${WHAT}
 
