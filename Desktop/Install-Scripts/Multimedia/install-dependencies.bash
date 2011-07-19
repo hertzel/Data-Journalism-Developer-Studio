@@ -1,6 +1,6 @@
 #! /bin/bash -v
 
-# needed for calibre
+# needed for latest calibre
 sudo zypper addrepo -cf \
 http://download.opensuse.org/repositories/Documentation:/Tools/openSUSE_11.4_python_Factory/Documentation:Tools.repo
 sudo zypper addrepo -cf \
