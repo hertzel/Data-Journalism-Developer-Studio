@@ -1,12 +1,5 @@
 #! /bin/bash -v
 
-# needed for latest calibre
-sudo zypper addrepo -cf \
-http://download.opensuse.org/repositories/Documentation:/Tools/openSUSE_11.4_python_Factory/Documentation:Tools.repo
-sudo zypper addrepo -cf \
-http://download.opensuse.org/repositories/devel:/languages:/python:/Factory/openSUSE_11.4/devel:languages:python:Factory.repo
-sudo zypper update
-
 # needed for R audio  packages
 sudo zypper install -y fftw3 fftw3-devel fftw3-threads fftw3-threads-devel
 
