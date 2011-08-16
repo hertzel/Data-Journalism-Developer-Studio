@@ -1,7 +1,7 @@
 #! /bin/bash -v
 
 sudo zypper addrepo -cf \
-  http://download.opensuse.org/repositories/KDE:/Unstable:/Playground/openSUSE_11.4/KDE:Unstable:Playground.repo
+  http://download.opensuse.org/repositories/Publishing/openSUSE_11.4/Publishing.repo
 sudo zypper refresh
 sudo zypper update
 
