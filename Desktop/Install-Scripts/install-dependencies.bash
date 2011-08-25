@@ -17,6 +17,10 @@
 sudo zypper addrepo -cf \
   http://download.opensuse.org/repositories/openSUSE:/11.4:/Contrib/standard/openSUSE:11.4:Contrib.repo
 
+# recent LaTeX stuff
+sudo zypper addrepo -cf \
+  http://download.opensuse.org/repositories/Publishing/openSUSE_11.4/Publishing.repo
+
 # wget and git may not be there in appliances
 sudo zypper install -y wget git-core
 
