@@ -2,7 +2,8 @@
 
 export WHERE=http://maqetta.org/downloads
 export DIR=maqetta
-export WHAT=maqetta-Preview2.zip
+export \
+  WHAT=`curl -s ${WHERE}/|grep '.zip'|sed 's/^.*href=.//'|sed 's/zip.*/zip/'`
 
 mkdir -p ~/local
 pushd ~/local
